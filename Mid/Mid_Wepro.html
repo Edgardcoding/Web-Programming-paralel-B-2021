@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv"X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Bootstrap</title>
+     <link rel="stylesheet" href="Supit.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+
+<body>
+<!-- header -->
+	<header>
+		<div class="container">
+			<h1><a>Student Management MiniApp</a></h1>
+			<ul>
+				<li class="active"><a href="index.html">HOME</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+			</ul>
+		</div>
+	</header>
+
+<div class="container">
+    <h3>*Student Management*</h3>
+    <h4>" MiniApp "</h4>
+</div>
+<hr />
+
+<div class="container">
+      <div class="main">
+         <form action"#">
+             <div>
+             <h5>Silakan Megisi Data Diri Anda</h5>
+                <label for="student ID">Student ID (NIM)</label>
+                <input type="text" name="student ID" Id="student ID">
+             </div>
+
+             <div>
+                <label for="Name">Full Name</label>
+                <input type="text" name="Name" Id="Name">
+             </div>
+
+<div class="ui form">
+  <div class="field">
+    <select>
+      <option value="" _msthash="3190928" _msttexthash="75062">Jenis kelamin</option>
+      <option value="1" _msthash="3191110" _msttexthash="42861">Laki-laki</option>
+      <option value="0" _msthash="3191292" _msttexthash="73437">Perempuan</option>
+    </select>
+  </div>
+</div>
+            <div>
+                <label for="Faculty">Faculty</label>
+                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                <option selected>SELECT PROGRAM OF STUDY</option>
+                <option value="1">Pascasarjana</option>
+                <option value="2">Fakultas Filsafat</option>
+                <option value="3">Fakultas Keguruan dan Ilmu Pendidikan</option>
+                <option value="4">Fakultas Ekonomi dan Bisnis</option>
+                <option value="5">Fakultas Pertanian</option>
+                <option value="6">Fakultas Ilmu Komputer</option>
+                <option value="7">Fakultas Keperawatan</option>
+                <option value="8">Akademi Sekretari Manajemen Indonesia Klabat</option>
+                </select>
+             </div>
+
+             <div>
+                <label for="Program">Program of Study</label>
+                 <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                <option selected>SELECT FACULTY</option>
+                <option value="1">Profesi Ners</option>
+                <option value="2">Keperawatan</option>
+                <option value="3">Magister Manajemen</option>
+                <option value="4">Magister Teologi</option>
+                <option value="5">Ilmu Filsafat</option>
+                <option value="6">Pendidikan Agama</option>
+                <option value="7">Pendidikan Bahasa Inggris</option>
+                <option value="8">Pendidikan Ekonomi</option>
+                <option value="9">Pendidikan Luar Sekolah</option>
+                <option value="10">Akuntansi</option>
+                <option value="11">Manajemen</option>
+                <option value="12">Agroteknologi</option>
+                <option value="13">Informatika</option>
+                <option value="14">Sistem Informasi</option>
+                <option value="15">Sekretari (D3)</option>
+                </select>
+             </div>
+
+             <div>
+                <button onclick="checkForm()">Add Student</button>
+             </div>
+         </form>
+      </div>
+</div>
+<hr />
+<div class="container">
+<div3 class="col-4">
+<div3 class="form-filter">
+<div3>
+<h3>Filter Student By</h3>
+<p> Falculty</p>
+<select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                <option selected>SELECT FACULTY</option>
+                <option value="1">Pascasarjana</option>
+                <option value="2">Fakultas Filsafat</option>
+                <option value="3">Fakultas Keguruan dan Ilmu Pendidikan</option>
+                <option value="4">Fakultas Ekonomi dan Bisnis</option>
+                <option value="5">Fakultas Pertanian</option>
+                <option value="6">Fakultas Ilmu Komputer</option>
+                <option value="7">Fakultas Keperawatan</option>
+                <option value="8">Akademi Sekretari Manajemen Indonesia Klabat</option>
+                </select>
+</div3>
+<button type="button" onClick='' class="btn btn-primary">Show Student</button>
+</form>
+<br>
+<div4 class="col-4">
+<div4 class="form-filter">
+<div4>
+<p> Program Studi</p>
+<select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                <option selected>SELECT PROGRAM OF STUDY</option>
+                <option value="1">Profesi Ners</option>
+                <option value="2">Keperawatan</option>
+                <option value="3">Magister Manajemen</option>
+                <option value="4">Magister Teologi</option>
+                <option value="5">Ilmu Filsafat</option>
+                <option value="6">Pendidikan Agama</option>
+                <option value="7">Pendidikan Bahasa Inggris</option>
+                <option value="8">Pendidikan Ekonomi</option>
+                <option value="9">Pendidikan Luar Sekolah</option>
+                <option value="10">Akuntansi</option>
+                <option value="11">Manajemen</option>
+                <option value="12">Agroteknologi</option>
+                <option value="13">Informatika</option>
+                <option value="14">Sistem Informasi</option>
+                <option value="15">Sekretari (D3)</option>
+                </select>
+</div4>
+<button type="button" onClick='' class="btn btn-primary">Show Student</button>
+</form>
+
+<div class="container">
+<br>
+<hr>
+<h1 class="text-center py-4">Our Students</h1>
+</div>
+
+<div class="container">
+<form1>
+  <input class="search" type="text" placeholder="Cari..." required>	
+  <input class="button" type="button" value="Cari">		
+</form1>
+</div>
+<br>
+
+	<header>
+		<div class="container">
+			<h4><a><br>made with :</br></a></h4>
+       <img src="https://programaenlinea.net/wp-content/uploads/2020/06/visual-studio-code-1170x658-1-1024x576.png" alt="Gambar_Langit" style="width:200px;height:100px;">
+       <img src="https://arjunkomath.gallerycdn.vsassets.io/extensions/arjunkomath/js-file-header/0.1.3/1519552929936/Microsoft.VisualStudio.Services.Icons.Default" alt="Gambar_Langit" style="width:200px;height:100px;">
+      <h4><a><br>Pembuat : " Supit Edgard Garry "</br></a></h4>
+       <img src="https://scontent.fmdc3-1.fna.fbcdn.net/v/t1.6435-9/244470324_118194710604254_5709054027274516434_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=e3f864&_nc_ohc=v173n_fJxxQAX-TCZu6&_nc_ht=scontent.fmdc3-1.fna&oh=a2101edc0ae04513d2fd786f03316832&oe=6184846D" alt="Gambar_Langit" style="width:200px;height:100px;">
+		</div>
+	</header>
+      <script>
+      function checkForm(){
+        var student_ID = document.getElementById("student ID").value;
+        var Name = document.getElementById("Name").value;
+
+        if(student ID == "" || Name == ""){
+              alert("form tidak boleh kosong");
+        }
+        else{
+            alert("berhasil login");
+        }
+      }
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+<body1>
+</html>
